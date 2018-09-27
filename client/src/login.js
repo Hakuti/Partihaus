@@ -74,9 +74,7 @@ class Login extends Component {
               Don't have an account? <span className="link-signup">Signup</span>
             </Link>
           </div>
-          <div className="signiture">
-            <h1>Template Built & Designed by Roman Chvalbo</h1>
-          </div>
+          <div className="signiture" />
         </div>
       </React.Fragment>
     );
