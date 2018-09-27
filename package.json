@@ -11,7 +11,7 @@
     "client": "cd client && npm start",
     "startboth": "concurrently \"nodemon app.js\" \"npm run client\"",
     "start": "node app.js",
-    "heroku-postbuild": "cd client && npm install && npm run client"
+    "heroku-postbuild": "cd client && npm install && npm start"
   },
   "dependencies": {
     "bcrypt": "^3.0.0",
