@@ -19,6 +19,11 @@ app.use((req, res, next) => {
   next();
 });
 
+// Express only serves static assets in production
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("client"));
+}
+
 /*========= This is the typical node server setup so we can be able to parse the requests/responses coming in and out of the server ============*/
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
