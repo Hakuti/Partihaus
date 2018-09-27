@@ -3,12 +3,14 @@
   "version": "0.0.0",
   "private": true,
   "author": "Roman Chvalbo",
+  "engines": {
+    "node": "8.9.4"
+  },
   "scripts": {
     "server": "node app.js",
     "client": "cd client && npm start",
     "startboth": "concurrently \"nodemon app.js\" \"npm run client\"",
     "start": "node app.js"
-    
   },
   "dependencies": {
     "bcrypt": "^3.0.0",
