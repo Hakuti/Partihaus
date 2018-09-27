@@ -21,7 +21,7 @@ app.use((req, res, next) => {
 
 // Express only serves static assets in production
 if (process.env.NODE_ENV === "production") {
-  app.use(path.join(__dirname, "client", "index.html"));
+  app.use(express.static(path.join(__dirname, "client/build")));
 }
 
 /*========= This is the typical node server setup so we can be able to parse the requests/responses coming in and out of the server ============*/
